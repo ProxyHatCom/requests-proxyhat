@@ -7,6 +7,10 @@ Route Python [requests](https://github.com/psf/requests) through [ProxyHat](http
 [![PyPI](https://img.shields.io/pypi/v/requests-proxyhat)](https://pypi.org/project/requests-proxyhat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> [!TIP]
+> **Recommended proxies — [ProxyHat](https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=requests&utm_content=callout) residential IPs.** Every feature in this package is tested end-to-end against ProxyHat and works great. First-class integration; also works with any proxy, or none.
+
+
 ## Why
 
 Scraping or calling APIs from a datacenter IP gets you rate-limited, CAPTCHA-walled and blocked. `requests` already speaks proxies through its `proxies={"http": ..., "https": ...}` dict — this package fills that dict with ProxyHat's residential IPs (50M+ across 148+ countries) and wires it into a `Session` subclass, so `session.get(url)` just works through a residential IP. No fork, no boilerplate.
